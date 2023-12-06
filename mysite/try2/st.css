@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.chat-container {
+    width: 95%;
+    height: calc(100vh - 60px); /* Adjusted height to accommodate input and button */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; /* Relative position for absolute positioning of input group */
+    display: inline-block;
+}
+
+.opkl{
+  margin: 0px;
+}
+
+.jkl{
+  background-color: #f0f0f0;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 70%;
+    align-self: flex-end;
+}
+
+.assistant-message {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 70%;
+    align-self: flex-start;
+}
+
+.ghj{
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+}
+.fgr{
+    background-color: #3498db;
+
+}
+
+.awe{
+
+  display: inline-block;
+  margin-top: 500px;
+}
+
+
+.input-group {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex; /* Added to make the input box and button display in a row */
+}
+
+#inputMessage {
+    flex: 0.7; /* Reduced box width by 30% */
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+.btn-primary1 {
+    width: 100%; /* Increased button width */
+    border-radius: 25px;
+    margin-left: 10px; /* Added margin between input and button */
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2187c6;
+}
+
+.right-panel {
+    padding: 20px;
+}
