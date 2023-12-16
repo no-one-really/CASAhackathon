@@ -4,6 +4,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import pickle
+from sklearnex import patch_sklearn
+patch_sklearn()
 
 # Load the dataset as an example
 df = pd.read_excel('encoded_sample.xlsx')
