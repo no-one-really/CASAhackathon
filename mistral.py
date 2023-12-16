@@ -1,5 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import sys
+
 statement = sys.argv[1]
 prompt2 = sys.argv[2]
 clr_st = statement.replace("#", " ")
@@ -29,17 +30,16 @@ tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.1")
 model = AutoModelForCausalLM.from_pretrained(
     "mistralai/Mistral-7B-Instruct-v0.1")
 messages = [
-    {"role": "user", "content": "I need some assistance in IT"},
-    {"role": "assistant", "content": clr_pmt},
-    {"role": "user", "content": clr_st}
+    {"role": "user", "content": "I need some assistance"},
+    {"role": "assistant", "content": "I will help"},
+    {"role": "user", "content": "Will black shoe suit white pants"}
 
 ]
 encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
 # model.save_pretrained()
 model_inputs = encodeds.to(device)
 model.to(device)
-generated_ids = model.generate(
-    model_inputs, max_new_tokens=1000, do_sample=True)
+generated_ids = model.generate(model_inputs, max_new_tokens=1000, do_sample=True)
 decoded = tokenizer.batch_decode(generated_ids)
-result = find_nth_occurrence(decoded[0], target_string, nth_occurrence)
-print(decoded[0][result+7:])
+# result = find_nth_occurrence(decoded[0], target_string, nth_occurrence)
+print(decoded[0])
