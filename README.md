@@ -9,7 +9,7 @@
 
 Chief AI Shopping Assistant (CASA) is a proactive shopping companion featuring learning adaptation, tailoring each user's experience by continuously adapting to evolving preferences. It also provides Instore analysis and helps with visual merchandising. 
 It will help us track deadzones in the store. The analysis will be displayed on a dashboard which contain Customer gaze analysis, Foot traffic, User Interaction with products. It will also helps in predicting the sales and keep up with the trends.
-Our online assistant powered by LLM will provide suggestions based on items in the cart, user preferences and user profile. It also provides a chat interface to have a back and forth conversation to help the user figure out their fashion needs.
+Our online assistant powered by LLM will provide suggestions based on items in the cart, user preferences and user profile. It also provides a chat interface to have a back and forth conversation to help the user figure out their fashion needs. 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
 
 **Instore flow:**
 
